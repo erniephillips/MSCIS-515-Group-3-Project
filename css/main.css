@@ -1,17 +1,38 @@
 /* Palette https://coolors.co/f8f9fa-e9ecef-dee2e6-ced4da-adb5bd-6c757d-495057-343a40-212529 */
-#section-one{
+
+#header {
+  /* image credit: https://unsplash.com/s/photos/business */
+  background: url("../images/darkened-En_Photoaday_CSD-free-image.jpg") no-repeat;
+  background-size: 100%;
+  background-position: center;
+  color:white;
+}
+
+#header-text{
+  font-weight: 700;
+}
+
+#subheader-text{
+  font-weight: 900;
+}
+
+#section-one {
   background-color: #adb5bd;
 }
-#section-two{
+#section-two {
   background-color: #dee2e6;
 }
-#section-three{
+#section-three {
   background-color: #495057;
   color: white;
 }
-#section-four{
+#section-four {
   background-color: #dee2e6;
 }
-#section-five{
+#section-five {
   background-color: #adb5bd;
+}
+
+#bellevue-link {
+  color: #495057;
 }
