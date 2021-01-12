@@ -30,9 +30,48 @@ https://dryicons.com/free-icons/cloud-computing-icons
 (Free - Used) https://publicdomainvectors.org/en/search/cloud-computing
 */
 
+/*Positioning Offset Images: https://css-tricks.com/positioning-offset-background-images/*/
+/*Back To Top Icon (Free) https://www.pngkey.com/detail/u2e6q8o0o0w7o0w7_jump-to-the-top-scroll-to-top-icon/*/
+
 * {
   font-family: 'Times New Roman', serif;
 }
+
+.wrapper {
+  height: 40vh;
+}
+
+.parallax-img {
+  height: 140%;
+  background-attachment: fixed;
+  background-position: right 0px bottom 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: gray;
+  background-blend-mode: multiply;
+  /*https://css-tricks.com/basics-css-blend-modes/*/
+  background-image: url('../images/En_Photoaday_CSD-free-image.webp');
+  color: white;
+}
+
+nav{
+  background-color: #495057;
+}
+
+html {
+  scroll-behavior: smooth; /*Set slower scroll for link clicks*/
+} 
+
+.back-to-top-link, .back-to-top-link:hover{
+  color:black;
+  text-decoration: none !important;
+}
+
+.back-to-top-link-offset, .back-to-top-link-offset:hover{
+  color:white;
+  text-decoration: none !important;
+}
+
 
 #header {
   /* image credit: https://unsplash.com/s/photos/business */
@@ -47,11 +86,6 @@ https://dryicons.com/free-icons/cloud-computing-icons
   transform:skew(60deg, -30deg) scaleY(.66667); https://www.creativebloq.com/features/css-tricks-to-revolutionise-your-layouts
 } */
 
-img {
-  mask-image: url('../images/cloud-network.png') linear-gradient(-45deg, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 50%);
-  mask-image: url(#masking); /*referencing to the element generated and defined in SVG code*/
-} 
-
 #header-text{
   font-weight: 700;
 }
@@ -61,7 +95,7 @@ img {
 }
 
 #section-one {
-  background-color: #adb5bd;
+  background-color: #dee2e6;
 }
 #section-two {
   /* background-color: #dee2e6; */
@@ -71,10 +105,10 @@ img {
   color: white;
 }
 #section-four {
-  background-color: #dee2e6;
+  background-color: #adb5bd;
 }
 #section-five {
-  background-color: #adb5bd;
+  background-color: #dee2e6;
 }
 
 #bellevue-link {
