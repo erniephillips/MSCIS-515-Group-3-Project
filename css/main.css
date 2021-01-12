@@ -59,10 +59,10 @@ nav {
   background-color: #495057;
 }
 
-html {
-  scroll-behavior: smooth;
+/* html {
+  scroll-behavior: smooth; */
   /*Set slower scroll for link clicks*/
-}
+/* } */
 
 .back-to-top-link, .back-to-top-link:hover {
   color: black;
