@@ -6,8 +6,8 @@
  * Professor Krohn
  */
 
-
 /* Palette Scheme: https://coolors.co/f8f9fa-e9ecef-dee2e6-ced4da-adb5bd-6c757d-495057-343a40-212529 */
+
 /* Free Images: https://www.format.com/magazine/resources/design/32-great-free-vector-art-websites */
 
 /*
@@ -31,6 +31,7 @@ https://dryicons.com/free-icons/cloud-computing-icons
 */
 
 /*Positioning Offset Images: https://css-tricks.com/positioning-offset-background-images/*/
+
 /*Back To Top Icon (Free) https://www.pngkey.com/detail/u2e6q8o0o0w7o0w7_jump-to-the-top-scroll-to-top-icon/*/
 
 * {
@@ -54,59 +55,65 @@ https://dryicons.com/free-icons/cloud-computing-icons
   color: white;
 }
 
-nav{
+nav {
   background-color: #495057;
 }
 
 html {
-  scroll-behavior: smooth; /*Set slower scroll for link clicks*/
-} 
+  scroll-behavior: smooth;
+  /*Set slower scroll for link clicks*/
+}
 
-.back-to-top-link, .back-to-top-link:hover{
-  color:black;
+.back-to-top-link, .back-to-top-link:hover {
+  color: black;
   text-decoration: none !important;
 }
 
-.back-to-top-link-offset, .back-to-top-link-offset:hover{
-  color:white;
+.back-to-top-link-offset, .back-to-top-link-offset:hover {
+  color: white;
   text-decoration: none !important;
 }
-
 
 #header {
   /* image credit: https://unsplash.com/s/photos/business */
   background: url("../images/En_Photoaday_CSD-free-image.webp") no-repeat;
   background-size: 100%;
   background-position: center;
-  background-color:gray;
-  background-blend-mode: multiply; /*https://css-tricks.com/basics-css-blend-modes/*/
-  color:white;
+  background-color: gray;
+  background-blend-mode: multiply;
+  /*https://css-tricks.com/basics-css-blend-modes/*/
+  color: white;
 }
+
 /* #header > h1{
   transform:skew(60deg, -30deg) scaleY(.66667); https://www.creativebloq.com/features/css-tricks-to-revolutionise-your-layouts
 } */
 
-#header-text{
+#header-text {
   font-weight: 700;
 }
 
-#subheader-text{
+#subheader-text {
   font-weight: 900;
 }
 
 #section-one {
   background-color: #dee2e6;
 }
+
 #section-two {
   /* background-color: #dee2e6; */
 }
+
 #section-three {
   background-color: #495057;
   color: white;
 }
+
 #section-four {
   background-color: #adb5bd;
 }
+
 #section-five {
   background-color: #dee2e6;
 }
@@ -115,30 +122,37 @@ html {
   color: #495057;
 }
 
-#footer{
+#footer {
   background-color: white;
 }
 
-#footer > div > div > div:nth-child(1){
+#footer>div>div>div:nth-child(1) {
   border-right: 3px #adb5bd solid;
   border-top-right-radius: 35%;
 }
 
-#footer > div > div > div:nth-child(2){
+#footer>div>div>div:nth-child(2) {
   border-bottom-right-radius: 35%;
   border-top-left-radius: 35%;
   border-left: 3px #adb5bd solid;
   border-right: 3px #adb5bd solid;
 }
-#footer > div > div > div:nth-child(3){
+
+#footer>div>div>div:nth-child(3) {
   border-bottom-left-radius: 35%;
   border-top-right-radius: 35%;
   border-left: 3px #adb5bd solid;
   border-right: 3px #adb5bd solid;
   vertical-align: auto;
 }
-#footer > div > div > div:nth-child(4){
+
+#footer>div>div>div:nth-child(4) {
   border-top-left-radius: 35%;
   /* border-bottom-left-radius: 35%; */
   border-left: 3px #adb5bd solid;
+}
+
+#copyright-link{
+  color:#495057;
+  font-weight: bold;
 }
