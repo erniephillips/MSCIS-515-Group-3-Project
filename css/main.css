@@ -30,14 +30,27 @@ https://dryicons.com/free-icons/cloud-computing-icons
 (Free - Used) https://publicdomainvectors.org/en/search/cloud-computing
 */
 
+* {
+  font-family: 'Times New Roman', serif;
+}
+
 #header {
   /* image credit: https://unsplash.com/s/photos/business */
-  background: url("../images/darkened-En_Photoaday_CSD-free-image.jpg") no-repeat;
+  background: url("../images/En_Photoaday_CSD-free-image.webp") no-repeat;
   background-size: 100%;
   background-position: center;
-  background-color:black;
+  background-color:gray;
+  background-blend-mode: multiply; /*https://css-tricks.com/basics-css-blend-modes/*/
   color:white;
 }
+/* #header > h1{
+  transform:skew(60deg, -30deg) scaleY(.66667); https://www.creativebloq.com/features/css-tricks-to-revolutionise-your-layouts
+} */
+
+img {
+  mask-image: url('../images/cloud-network.png') linear-gradient(-45deg, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 50%);
+  mask-image: url(#masking); /*referencing to the element generated and defined in SVG code*/
+} 
 
 #header-text{
   font-weight: 700;
