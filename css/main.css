@@ -10,6 +10,26 @@
 /* Palette Scheme: https://coolors.co/f8f9fa-e9ecef-dee2e6-ced4da-adb5bd-6c757d-495057-343a40-212529 */
 /* Free Images: https://www.format.com/magazine/resources/design/32-great-free-vector-art-websites */
 
+/*
+Sites for Icons
+https://www.flaticon.com/search?search-type=icons&word=cloud+computing
+https://iconmonstr.com/?s=cloud+computing
+https://www.brandsoftheworld.com/search/logo?search_api_views_fulltext=cloud%20computing
+https://dryicons.com/free-icons/cloud-computing-icons
+(Free Requires Attribution) https://www.vexels.com/vectors/preview/74074/cloud-computing-retro-icon-set
+(Free Requires Attribution) https://www.vecteezy.com/vector-art/86833-cloud-computing-technology-concept-vector
+(Free) https://www.vectorportal.com/free-vector/cloud-computing/
+(Free) https://www.1001freedownloads.com/?q=cloud+computing
+(Free - Used) https://pixabay.com/illustrations/iot-internet-of-things-network-3337536/
+(Free) https://www.pexels.com/search/cloud%20computing/
+(Free - Used) https://unsplash.com/s/photos/cloud-computing
+(Free) https://www.flickr.com/search/?text=cloud%20computing
+(Free - Good Icons) https://openclipart.org/search/?query=cloud+computing
+(Free - Good Icons) http://www.clker.com/search/cloud+computing/1
+(Some Free - Good Images) https://all-free-download.com/free-vector/cloud-computing.html
+(Free - Used) https://publicdomainvectors.org/en/search/cloud-computing
+*/
+
 #header {
   /* image credit: https://unsplash.com/s/photos/business */
   background: url("../images/darkened-En_Photoaday_CSD-free-image.jpg") no-repeat;
@@ -46,4 +66,32 @@
 
 #bellevue-link {
   color: #495057;
+}
+
+#footer{
+  background-color: white;
+}
+
+#footer > div > div > div:nth-child(1){
+  border-right: 3px #adb5bd solid;
+  border-top-right-radius: 35%;
+}
+
+#footer > div > div > div:nth-child(2){
+  border-bottom-right-radius: 35%;
+  border-top-left-radius: 35%;
+  border-left: 3px #adb5bd solid;
+  border-right: 3px #adb5bd solid;
+}
+#footer > div > div > div:nth-child(3){
+  border-bottom-left-radius: 35%;
+  border-top-right-radius: 35%;
+  border-left: 3px #adb5bd solid;
+  border-right: 3px #adb5bd solid;
+  vertical-align: auto;
+}
+#footer > div > div > div:nth-child(4){
+  border-top-left-radius: 35%;
+  /* border-bottom-left-radius: 35%; */
+  border-left: 3px #adb5bd solid;
 }
