@@ -39,12 +39,24 @@ $('body').scroll(function() {
 	});
 });
 
-
-var bg = $(".parallax-img, html");
-
-function resizeBackground() {
-    bg.height($(window).height());
-}
-
-$(window).resize(resizeBackground);
-resizeBackground();
+(function detectIE() {
+  var ua = window.navigator.userAgent;
+  var msie = ua.indexOf('MSIE ');
+  var trident = ua.indexOf('Trident/');
+  var edge = ua.indexOf('Edge/');
+  if (msie > 0) {
+    // IE 10 or older 
+		$("#ie-alert").removeAttr('hidden');
+  }
+  else if (trident > 0) {
+    // IE 11 
+		$("#ie-alert").removeAttr('hidden');
+  }
+  else if (edge > 0) {
+    // Edge 
+    //Do some stuff
+  }
+  else
+    // other browser
+    return false;
+})();

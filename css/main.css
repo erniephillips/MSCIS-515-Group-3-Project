@@ -39,6 +39,15 @@ https://dryicons.com/free-icons/cloud-computing-icons
   font-family: "Bodoni MT", Didot, "Didot LT STD", "Book Antiqua", Garamond, "Times New Roman", serif;
 }
 
+.alert-fixed {
+  position:fixed; 
+  top: 0px; 
+  left: 0px; 
+  width: 100%;
+  z-index:9999; 
+  border-radius:0px
+}
+
 html {
   height: 100%;
   overflow: hidden;
