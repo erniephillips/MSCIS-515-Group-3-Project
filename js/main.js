@@ -38,3 +38,13 @@ $('body').scroll(function() {
 		transform: 'rotate(' + offset + 'deg)'
 	});
 });
+
+
+var bg = $(".parallax-img, html");
+
+function resizeBackground() {
+    bg.height($(window).height());
+}
+
+$(window).resize(resizeBackground);
+resizeBackground();
