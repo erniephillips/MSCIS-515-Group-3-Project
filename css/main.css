@@ -38,6 +38,15 @@ https://dryicons.com/free-icons/cloud-computing-icons
   font-family: "Times New Roman", serif;
 }
 
+html{
+  overflow: hidden;
+  height: 100%;
+}
+body{
+  overflow: auto;
+  height: 100%;
+}
+
 nav {
   /* background-color: #495057; */
   background-color: transparent;
@@ -58,32 +67,47 @@ nav a:hover{
 }
 
 .parallax-img {
+  /*https://css-tricks.com/basics-css-blend-modes/*/
   height: 100%;
+  display: block;
   background-attachment: fixed;
   background-position: right 0px bottom 0px;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: gray;
   background-blend-mode: multiply;
-  /*https://css-tricks.com/basics-css-blend-modes/*/
-  background-image: url("../images/En_Photoaday_CSD-free-image.webp");
+  background-image: url("../images/En_Photoaday_CSD-free-image.png");
   color: white;
+  position: relative;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+  .parallax-img:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.1);
+    background-blend-mode: unset;
+  }
 }
 
 #center-img-div {
   position: absolute;
-  bottom: -55px;
+  bottom: -52px;
   background-color: white;
   z-index: 2;
   border: black solid 5px;
   width: 100px;
   height: 100px;
   border-radius: 50%;
+  
 }
 
 #center-img {
-  width: 80%;
-  margin-left: 8%;
+  width: 40%;
+  margin-left: 3%;
+  margin-top: 8%;
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -96,7 +120,7 @@ nav a:hover{
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 701px) {
   #center-img-div {
-    left: 46.5%;
+    left: 47.5%;
   }
 }
 
