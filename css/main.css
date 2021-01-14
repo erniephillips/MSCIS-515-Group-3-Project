@@ -40,15 +40,25 @@ https://dryicons.com/free-icons/cloud-computing-icons
 
 nav {
   /* background-color: #495057; */
-  background-color: black;
+  background-color: transparent;
+}
+
+nav a{
+  color:white !important;
+}
+
+nav a:hover{
+  color: #dee2e6 !important;
 }
 
 .wrapper {
   height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 .parallax-img {
-  height: 94%;
+  height: 100%;
   background-attachment: fixed;
   background-position: right 0px bottom 0px;
   background-repeat: no-repeat;
@@ -125,6 +135,9 @@ nav {
 } */
 
 #header-text {
+  position: fixed;
+  width: 100%;
+  margin: auto;
   font-weight: 700;
 }
 
