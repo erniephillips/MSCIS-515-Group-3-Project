@@ -34,83 +34,22 @@ https://dryicons.com/free-icons/cloud-computing-icons
 
 /*Back To Top Icon (Free) https://www.pngkey.com/detail/u2e6q8o0o0w7o0w7_jump-to-the-top-scroll-to-top-icon/*/
 
+* {
+  font-family: "Times New Roman", serif;
+}
 
-html {
-  height: 100%;
+html{
   overflow: hidden;
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  -webkit-perspective: 1px;
-  perspective: 1px;
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
   height: 100%;
-  overflow-y: scroll;
-  overflow-x: hidden;
+}
+body{
+  overflow: auto;
+  height: 100%;
 }
 
-header {
-  color: #fff;
-  box-sizing: border-box;
-  min-height: 40vw;
-  padding: 30vw 0 5vw;
-  position: relative;
-  -webkit-transform-style: inherit;
-  transform-style: inherit;
-  width: 100vw;
-  height: 100vh;
-}
-
-header,
-header:before {
-  background: 50% 50% / cover;
-}
-
-header::before {
-  bottom: 0;
-  content: "";
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  display: block;
-  background-color: #8a8;
-  background-image: url('../images/darkened-En_Photoaday_CSD-free-image.jpg');
-  background-size: cover;
-  -webkit-transform-origin: center center 0;
-  -webkit-transform: translateZ(-1px) scale(2);
-  transform-origin: center center 0;
-  transform: translateZ(-1px) scale(2);
-  z-index: -1;
-  min-height: 100vh;
-}
-
-header * {
-  font-weight: normal;
-  letter-spacing: 0.2em;
-  text-align: center;
-  margin: 0;
-  padding: 1em 0;
-}
-
-header p {
-  background-color: hsla(0, 0%, 100%, 0.1);
-}
-
-main {
-  line-height: 1.7;
-  position: relative;
-  z-index: 2;
-}
-
-/*Navigation Properties*/
 nav {
   /* background-color: #495057; */
-  position: absolute !important;
+  background-color: transparent;
 }
 
 nav a{
@@ -120,9 +59,41 @@ nav a{
 nav a:hover{
   color: #dee2e6 !important;
 }
-/* End navigation properties */
 
-#spinning-server {
+.wrapper {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.parallax-img {
+  /*https://css-tricks.com/basics-css-blend-modes/*/
+  height: 100%;
+  min-height: 100%; 
+  display: block;
+  background-attachment: fixed;
+  background-position: right 0px bottom 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: gray;
+  background-blend-mode: multiply;
+  background-image: url("../images/En_Photoaday_CSD-free-image.png");
+  color: white;
+  position: relative;
+}
+
+/* @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+  .parallax-img:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(27, 26, 26, 0.6);
+    background-blend-mode: unset;
+  }
+} */
+
+#center-img-div {
   position: absolute;
   bottom: -52px;
   background-color: white;
@@ -131,31 +102,36 @@ nav a:hover{
   width: 100px;
   height: 100px;
   border-radius: 50%;
+  
 }
 
-#spinning-server img {
+#center-img {
   width: 40%;
-  margin-left: 30%;
+  margin-left: 3%;
   margin-top: 8%;
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 700px) {
-  #spinning-server {
+  #center-img-div {
     left: 40%;
   }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 701px) {
-  #spinning-server {
+  #center-img-div {
     left: 47.5%;
   }
 }
 
 
 
-/* Back to top links */
+/* html {
+  scroll-behavior: smooth; */
+/*Set slower scroll for link clicks*/
+/* } */
+
 .back-to-top-link,
 .back-to-top-link:hover {
   color: black;
@@ -167,15 +143,43 @@ nav a:hover{
   color: white;
   text-decoration: none !important;
 }
-/*End Back to top links */
 
-/* Begin Sections Edits */
+#header {
+  /* image credit: https://unsplash.com/s/photos/business */
+  background: url("../images/En_Photoaday_CSD-free-image.webp") no-repeat;
+  background-size: 100%;
+  background-position: center;
+  background-color: gray;
+  background-blend-mode: multiply;
+  /*https://css-tricks.com/basics-css-blend-modes/*/
+  color: white;
+}
+
+/* #header > h1{
+  transform:skew(60deg, -30deg) scaleY(.66667); https://www.creativebloq.com/features/css-tricks-to-revolutionise-your-layouts
+} */
+
+#header-text {
+  position: fixed;
+  width: 100%;
+  margin: auto;
+  font-weight: 700;
+}
+
+#subheader-text {
+  position: fixed;
+  width: 100%;
+  margin: auto;
+  bottom: 80px;
+  font-weight: 900;
+}
+
 #section-one {
   background-color: #dee2e6;
 }
 
 #section-two {
-  background-color: #fff;
+  /* background-color: #dee2e6; */
 }
 
 #section-three {
@@ -190,8 +194,6 @@ nav a:hover{
 #section-five {
   background-color: #dee2e6;
 }
-/* End Sections Edits */
-
 
 #bellevue-link {
   color: #495057;

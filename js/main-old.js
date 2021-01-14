@@ -19,7 +19,7 @@ $(function() {
 			{
 				scrollTop: $($.attr(this, 'href')).offset().top
 			},
-			2000
+			1000
 		);
 	});
 });
@@ -30,7 +30,7 @@ $('body').scroll(function() {
 	offset = offset * 0.7;
 
 	// add css transform with the offset variable
-	$('#spinning-server').css({
+	$('#center-img-div').css({
 		'-moz-transform': 'rotate(' + offset + 'deg)',
 		'-webkit-transform': 'rotate(' + offset + 'deg)',
 		'-o-transform': 'rotate(' + offset + 'deg)',
