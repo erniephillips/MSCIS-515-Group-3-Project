@@ -20,3 +20,20 @@ $(function(){
         }, 1000);
     });
 });
+
+$(window).scroll(function() {
+  
+    // get the variable of how far we've scrolled from the top
+    var offset = $(window).scrollTop();
+      offset     = offset * .7;
+  
+    // add css transform with the offset variable
+    $('#center-img-div').css({
+      '-moz-transform': 'rotate(' + offset + 'deg)',
+      '-webkit-transform': 'rotate(' + offset + 'deg)',
+      '-o-transform': 'rotate(' + offset + 'deg)',
+      '-ms-transform': 'rotate(' + offset + 'deg)',
+      'transform': 'rotate(' + offset + 'deg)',
+    });
+    
+  });
