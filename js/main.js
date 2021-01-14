@@ -24,20 +24,20 @@ $(function() {
 	});
 });
 
-$('body').scroll(function() {
-	// get the variable of how far we've scrolled from the top
-	var offset = $('body').scrollTop();
-	offset = offset * 0.7;
+// $('body').scroll(function() {
+// 	// get the variable of how far we've scrolled from the top
+// 	var offset = $('body').scrollTop();
+// 	offset = offset * 0.7;
 
-	// add css transform with the offset variable
-	$('#spinning-server').css({
-		'-moz-transform': 'rotate(' + offset + 'deg)',
-		'-webkit-transform': 'rotate(' + offset + 'deg)',
-		'-o-transform': 'rotate(' + offset + 'deg)',
-		'-ms-transform': 'rotate(' + offset + 'deg)',
-		transform: 'rotate(' + offset + 'deg)'
-	});
-});
+// 	// add css transform with the offset variable
+// 	$('#spinning-server').css({
+// 		'-moz-transform': 'rotate(' + offset + 'deg)',
+// 		'-webkit-transform': 'rotate(' + offset + 'deg)',
+// 		'-o-transform': 'rotate(' + offset + 'deg)',
+// 		'-ms-transform': 'rotate(' + offset + 'deg)',
+// 		transform: 'rotate(' + offset + 'deg)'
+// 	});
+// });
 
 (function detectIE() {
   var ua = window.navigator.userAgent;
