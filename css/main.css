@@ -80,6 +80,7 @@ nav a:hover{
   background-image: url("../images/En_Photoaday_CSD-free-image.png");
   color: white;
   position: relative;
+  transition: height 999999s;
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
