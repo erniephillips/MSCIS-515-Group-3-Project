@@ -101,7 +101,17 @@ header h1, header p {
   padding: 1em 0;
 }
 
+header h1{
+  width: 100vw;
+  position: fixed;
+  bottom: 160px;
+}
+
 header p {
+  font-size: 18px;
+  width: 100vw;
+  position: fixed;
+  bottom: 100px;
   background-color: hsla(0, 0%, 100%, 0.1);
 }
 
