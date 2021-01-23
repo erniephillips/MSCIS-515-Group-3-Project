@@ -35,8 +35,11 @@ https://dryicons.com/free-icons/cloud-computing-icons
 /*Back To Top Icon (Free) https://www.pngkey.com/detail/u2e6q8o0o0w7o0w7_jump-to-the-top-scroll-to-top-icon/*/
 
 * {
-  font-size: 16px;
-  font-family: "Bodoni MT", Didot, "Didot LT STD", "Book Antiqua", Garamond, "Times New Roman", serif;
+  font-family: "Times New Roman", Times, serif;
+}
+
+main{
+  font-size: 18px;
 }
 
 .alert-fixed {
@@ -204,23 +207,27 @@ nav a:hover {
 /* Begin Sections Edits */
 
 #section-one {
-  background-color: #dee2e6;
+  background-color: #adb5bd;
 }
 
 #section-two {
-  background-color: #fff;
+  background-color: #dee2e6;
 }
 
 #section-three {
+  background-color: #F8F9FA;
+}
+
+#section-four {
   background-color: #495057;
   color: white;
 }
 
-#section-four {
+#section-five { 
   background-color: #adb5bd;
 }
 
-#section-five {
+#section-six{
   background-color: #dee2e6;
 }
 
@@ -232,6 +239,7 @@ nav a:hover {
 
 footer {
   background-color: white !important;
+  font-size: 14px !important;
 }
 
 footer>div>div>div:nth-child(1) {
@@ -380,3 +388,13 @@ footer>div>div>div:nth-child(4) {
   }
 }
 /* End Dividers */
+
+.hangingindent {
+  padding-left: 22px ;
+  text-indent: -22px ;
+  font-size: 14px;
+}
+
+.hangingindent a{
+  color: #495057;
+}
